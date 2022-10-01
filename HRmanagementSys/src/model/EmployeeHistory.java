@@ -35,4 +35,21 @@ public class EmployeeHistory {
      public void deleteemp(Employee e){
          history.remove(e);
      }
-}
+     
+     public Employee getEmployeeById(String Name) {
+         for (Employee e: history) {
+             if(e.getEmpid().equals(Name)) {
+                 return e;
+             }
+         }
+         return null;
+                 }
+         
+         
+         
+         
+         
+
+         // look for the employee in the arrylist with that id and return that Employeee object
+     }
+

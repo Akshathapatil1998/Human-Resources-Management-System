@@ -20,6 +20,7 @@ public class Employee {
     private String cellphonenum;
     private String emailid;
     private String photo;
+    
 
     public String getName() {
         return name;
