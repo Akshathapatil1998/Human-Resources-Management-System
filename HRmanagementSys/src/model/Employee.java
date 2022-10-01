@@ -4,6 +4,8 @@
  */
 package model;
 
+import javax.swing.table.DefaultTableModel;
+
 /**
  *
  * @author Dell
@@ -110,11 +112,14 @@ public class Employee {
         this.photo = photo;
     }
     
+   
+    
     @Override
    public String toString(){
        return name;
        
    }
+   
     
     
 }
