@@ -463,8 +463,8 @@ public class ViewJPanel extends javax.swing.JPanel {
      
         DefaultTableModel model=(DefaultTableModel)tblempdetails.getModel();
         int selectedRowIndex = tblempdetails.getSelectedRow();
-         if (selectedRowIndex==0){
-             //if single row is selected then update
+        if (selectedRowIndex==0){
+           //if single row is selected then update
              String name=txtName.getText();
              String empId=txtEmpId.getText();
              String age=txtAge.getText();
@@ -491,9 +491,9 @@ public class ViewJPanel extends javax.swing.JPanel {
                     
              
             Employee emp = history.getEmployeeById(empId);
-            emp.setName(name);
-            emp.setAge(age);
-            emp.setGender(gender);
+              emp.setName(name);
+              emp.setAge(age);
+              emp.setGender(gender);
               emp.setStartdate(startdate);
               emp.setLevel(level);
               emp.setTeaminfo(teaminfo);
@@ -512,11 +512,12 @@ public class ViewJPanel extends javax.swing.JPanel {
                  JOptionPane.showMessageDialog(this, "Table is Empty");
                  
              }
-             //else{
-                 // if row is not selected or multiple row is selected
-                // JOptionPane.showMessageDialog(this, "Please select single row to update");
+             else{
+                  //if row is not selected or multiple row is selected
+                JOptionPane.showMessageDialog(this, "Please select single row to update");
+             
                  
-            // }
+             }
          }
           
        
