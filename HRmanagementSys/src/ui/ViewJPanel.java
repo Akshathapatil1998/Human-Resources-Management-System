@@ -77,7 +77,7 @@ public class ViewJPanel extends javax.swing.JPanel {
         lblimage1 = new javax.swing.JLabel();
 
         lblTitle.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        lblTitle.setText("                                                                    View HR Management System");
+        lblTitle.setText("                                                                    View Employee Records");
 
         tblempdetails.setBackground(new java.awt.Color(204, 204, 204));
         tblempdetails.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -495,7 +495,7 @@ public class ViewJPanel extends javax.swing.JPanel {
             model.setValueAt(photo, tblempdetails.getSelectedRow(), 10);
             
 
-            JOptionPane.showMessageDialog(this, "Update Successful !!!");
+            JOptionPane.showMessageDialog(this, "Employee Records Updated successfully!!!");
         }
         else{
            

@@ -83,7 +83,7 @@ public class MainJFrame extends javax.swing.JFrame {
         SplitPane.setLeftComponent(ControlPanel);
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabel1.setText("         HR Management System");
+        jLabel1.setText("         Create Employee Record");
 
         javax.swing.GroupLayout WorkAreaLayout = new javax.swing.GroupLayout(WorkArea);
         WorkArea.setLayout(WorkAreaLayout);
