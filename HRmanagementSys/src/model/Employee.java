@@ -4,6 +4,8 @@
  */
 package model;
 
+import java.util.Date;
+import java.util.Objects;
 import javax.swing.table.DefaultTableModel;
 
 /**
@@ -11,17 +13,36 @@ import javax.swing.table.DefaultTableModel;
  * @author Dell
  */
 public class Employee {
-    private String name;
-    private String empid;
-    private String age;
+    
+    private String name; 
+    private int empid;
+    private int age;
     private String gender;
     private String startdate;
     private String level;
     private String teaminfo;
     private String positiontitle;
-    private String cellphonenum;
+    private long cellphonenum;
     private String emailid;
     private String photo;
+
+    public Employee() {
+    }
+
+    public Employee(String name, int empid, int age, String gender, String startdate, String level, String teaminfo, String positiontitle, long cellphonenum, String emailid, String photo) {
+        this.name = name;
+        this.empid = empid;
+        this.age = age;
+        this.gender = gender;
+        this.startdate = startdate;
+        this.level = level;
+        this.teaminfo = teaminfo;
+        this.positiontitle = positiontitle;
+        this.cellphonenum = cellphonenum;
+        this.emailid = emailid;
+        this.photo = photo;
+    }
+   
     
 
     public String getName() {
@@ -32,19 +53,19 @@ public class Employee {
         this.name = name;
     }
 
-    public String getEmpid() {
+    public int getEmpid() {
         return empid;
     }
 
-    public void setEmpid(String empid) {
+    public void setEmpid(int empid) {
         this.empid = empid;
     }
 
-    public String getAge() {
+    public int getAge() {
         return age;
     }
 
-    public void setAge(String age) {
+    public void setAge(int age) {
         this.age = age;
     }
 
@@ -88,11 +109,11 @@ public class Employee {
         this.positiontitle = positiontitle;
     }
 
-    public String getCellphonenum() {
+    public long getCellphonenum() {
         return cellphonenum;
     }
 
-    public void setCellphonenum(String cellphonenum) {
+    public void setCellphonenum(long cellphonenum) {
         this.cellphonenum = cellphonenum;
     }
 
@@ -111,8 +132,8 @@ public class Employee {
     public void setPhoto(String photo) {
         this.photo = photo;
     }
+
     
-   
     
     @Override
    public String toString(){

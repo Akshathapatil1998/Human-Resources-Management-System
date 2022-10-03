@@ -412,13 +412,13 @@ public class ViewJPanel extends javax.swing.JPanel {
           Employee selectedemp = (Employee)model.getValueAt(selectedRowIndex, 0);
           
           txtName.setText(selectedemp.getName());
-          txtEmpId.setText(selectedemp.getEmpid());
-          txtAge.setText(selectedemp.getAge());
+          txtEmpId.setText(String.valueOf(selectedemp.getEmpid()));
+          txtAge.setText(String.valueOf(selectedemp.getAge()));
           txtGender.setText(selectedemp.getGender());
           txtStartDate.setText(selectedemp.getStartdate());
           txtLevl.setText(selectedemp.getLevel());
           txtPositionTitle.setText(selectedemp.getPositiontitle());
-          txtCellPhoneNum.setText(selectedemp.getCellphonenum());
+          txtCellPhoneNum.setText(String.valueOf(selectedemp.getCellphonenum()));
           txtEmailAdd.setText(selectedemp.getEmailid());
           txtimage.setText(selectedemp.getPhoto());
           
@@ -629,37 +629,37 @@ public class ViewJPanel extends javax.swing.JPanel {
                                                             
     }
     }
-    private Employee getData(DefaultTableModel model,int selectedRowIndex){
-        Employee employee=new Employee();
-        employee.setName((String)model.getValueAt(selectedRowIndex, 0));
-        employee.setEmpid((String)model.getValueAt(selectedRowIndex, 1));
-        employee.setAge((String)model.getValueAt(selectedRowIndex, 2));
-        employee.setGender((String)model.getValueAt(selectedRowIndex, 3));
-        employee.setStartdate((String)model.getValueAt(selectedRowIndex, 4));
-        employee.setLevel((String)model.getValueAt(selectedRowIndex, 5));
-        employee.setTeaminfo((String)model.getValueAt(selectedRowIndex, 6));
-        employee.setPositiontitle((String)model.getValueAt(selectedRowIndex, 7));
-        employee.setCellphonenum((String)model.getValueAt(selectedRowIndex, 8));
-        employee.setEmailid((String)model.getValueAt(selectedRowIndex, 9));
-        employee.setPhoto((String)model.getValueAt(selectedRowIndex, 10));
-       
-        return employee;
-    }
-    private void setData(Employee employeeList){
-        employeeList.setName(txtName.getText());
-         employeeList.setEmpid(txtEmpId.getText());
-         employeeList.setAge(txtAge.getText());
-          employeeList.setGender(txtGender.getText());
-           employeeList.setStartdate(txtStartDate.getText());
-            employeeList.setLevel(txtLevl.getText());
-             employeeList.setTeaminfo(txtTeamInfo.getText());
-         employeeList.setPositiontitle(txtPositionTitle.getText());
-          employeeList.setCellphonenum(txtCellPhoneNum.getText());
-           employeeList.setEmailid(txtEmailAdd.getText());
-            employeeList.setPhoto(txtimage.getText());
-            
-    }
-    
+//    private Employee getData(DefaultTableModel model,int selectedRowIndex){
+//        Employee employee=new Employee();
+//        employee.setName((String)model.getValueAt(selectedRowIndex, 0));
+//        employee.setEmpid((String)model.getValueAt(selectedRowIndex, 1));
+//        employee.setAge((String)model.getValueAt(selectedRowIndex, 2));
+//        employee.setGender((String)model.getValueAt(selectedRowIndex, 3));
+//        employee.setStartdate((String)model.getValueAt(selectedRowIndex, 4));
+//        employee.setLevel((String)model.getValueAt(selectedRowIndex, 5));
+//        employee.setTeaminfo((String)model.getValueAt(selectedRowIndex, 6));
+//        employee.setPositiontitle((String)model.getValueAt(selectedRowIndex, 7));
+//        employee.setCellphonenum((String)model.getValueAt(selectedRowIndex, 8));
+//        employee.setEmailid((String)model.getValueAt(selectedRowIndex, 9));
+//        employee.setPhoto((String)model.getValueAt(selectedRowIndex, 10));
+//       
+//        return employee;
+//    }
+//    private void setData(Employee employeeList){
+//        employeeList.setName(txtName.getText());
+//         employeeList.setEmpid(txtEmpId.getText());
+//         employeeList.setAge(txtAge.getText());
+//          employeeList.setGender(txtGender.getText());
+//           employeeList.setStartdate(txtStartDate.getText());
+//            employeeList.setLevel(txtLevl.getText());
+//             employeeList.setTeaminfo(txtTeamInfo.getText());
+//         employeeList.setPositiontitle(txtPositionTitle.getText());
+//          employeeList.setCellphonenum(txtCellPhoneNum.getText());
+//           employeeList.setEmailid(txtEmailAdd.getText());
+//            employeeList.setPhoto(txtimage.getText());
+//            
+//    }
+//    
              
     
         

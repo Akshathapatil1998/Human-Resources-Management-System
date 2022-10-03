@@ -6,6 +6,7 @@ package model;
 
 import java.util.ArrayList;
 
+
 /**
  *
  * @author Dell
@@ -33,8 +34,19 @@ public class EmployeeHistory {
         return newEmps;
      }
      public void deleteemp(Employee e){
+                 if(e.equals(e))
          history.remove(e);
      }
+}
+//        ListIterator<Employee> var = history.listIterator();
+//         while(var.hasNext())
+//         {
+//             if(var.next().equals(e)){
+//                var.remove();
+//             }
+         
+
+     
 
      
 //     public Employee getEmployeeById(String Name) {
@@ -57,6 +69,6 @@ public class EmployeeHistory {
   
 
     
-        }
+        
     
      

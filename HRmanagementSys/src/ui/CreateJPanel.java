@@ -331,12 +331,12 @@ public class CreateJPanel extends javax.swing.JPanel {
                                         .addGap(171, 171, 171)
                                         .addComponent(btnupload, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addGroup(layout.createSequentialGroup()
-                                        .addGap(120, 120, 120)
-                                        .addComponent(lblPhoto, javax.swing.GroupLayout.PREFERRED_SIZE, 207, javax.swing.GroupLayout.PREFERRED_SIZE))))))
+                                        .addGap(139, 139, 139)
+                                        .addComponent(lblPhoto, javax.swing.GroupLayout.PREFERRED_SIZE, 176, javax.swing.GroupLayout.PREFERRED_SIZE))))))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(371, 371, 371)
                         .addComponent(btnSave, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(156, Short.MAX_VALUE))
+                .addContainerGap(168, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -348,7 +348,8 @@ public class CreateJPanel extends javax.swing.JPanel {
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addComponent(btnupload, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
-                        .addComponent(lblPhoto, javax.swing.GroupLayout.PREFERRED_SIZE, 174, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(lblPhoto, javax.swing.GroupLayout.PREFERRED_SIZE, 159, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(15, 15, 15))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(lblName, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -439,21 +440,22 @@ public class CreateJPanel extends javax.swing.JPanel {
         // TODO add your handling code here:
 
         
-       String name =txtName.getText();
-       String empid=txtEmpId.getText();
-       String age=txtAge.getText();
+     
+      
+        String name =txtName.getText();
+        int empid=Integer.parseInt(txtEmpId.getText());
+        int age= Integer.parseInt(txtAge.getText());
         String gender=txtGender.getText();
         String startdate=txtStartDate.getText();
         String level=txtLevl.getText();
         String teaminfo=txtTeamInfo.getText();
         String positiontitle=txtPositionTitle.getText();
-        String cellphonenum=txtCellPhoneNum.getText();
+        long cellphonenum=Long.parseLong(txtCellPhoneNum.getText());
         String emailid=txtEmailAdd.getText();
         String selectedPhoto=txtimage.getText();
          // txtimage.setText(selectedemp.getPhoto());
          
-         //if (name.equals(null)&&empid.equals(null)&&age.equals(null)&&gender.equals(null)&&startdate.equals(null)&&level.equals(null)&&teaminfo.equals(null)&&positiontitle.equals(null)&&cellphonenum.equals(null)&&emailid.equals(null)&&selectedPhoto.equals(null))      
-         //        JOptionPane.showMessageDialog(null, "All Fields are Manidtory");
+        
              
          
     
